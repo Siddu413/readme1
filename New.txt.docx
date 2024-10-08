@@ -1,0 +1,49 @@
+1. What is an operating system?
+Answer: An operating system (OS) is a software that acts as an interface between computer hardware and the user. It manages hardware resources, and provides services for the execution of various programs. Examples include Windows, Linux, and macOS.
+2. What are the main functions of an operating system?
+Answer:
+Process management: Managing the execution of multiple processes and multitasking.
+Memory management: Handling memory allocation for processes.
+File system management: Managing files and directories.
+Device management: Controlling hardware devices like printers, disks, etc.
+Security and access control: Protecting data and system integrity.
+3. What is the difference between a process and a thread?
+Answer:
+Process: A process is an independent program in execution, with its own memory space. Processes do not share memory with other processes.
+Thread: A thread is a subset of a process. Threads share the same memory space within a process, allowing for more efficient communication between tasks.
+4. What is a deadlock?
+Answer: A deadlock is a situation where two or more processes are unable to proceed because each is waiting for resources held by the other processes. For example, Process A holds Resource 1 and waits for Resource 2, while Process B holds Resource 2 and waits for Resource 1.
+5. What is the difference between multitasking and multiprogramming?
+Answer:
+Multitasking: It refers to executing multiple tasks simultaneously by sharing the CPU's time between them. It is closely related to the time-sharing environment.
+Multiprogramming: It involves running multiple programs on a single processor by loading them into memory and switching between them. It is aimed at keeping the CPU busy by switching tasks when one task is waiting for I/O.
+6. What is virtual memory?
+Answer: Virtual memory is a memory management technique that allows the OS to use disk space as additional RAM. It enables a computer to run programs larger than its actual physical memory by swapping data between the RAM and disk.
+7. What is paging in OS?
+Answer: Paging is a memory management scheme that eliminates the need for contiguous allocation of physical memory. The physical memory is divided into fixed-size blocks called "frames," and logical memory is divided into blocks of the same size called "pages." Pages are loaded into frames as needed.
+8. What is a context switch?
+Answer: A context switch occurs when the OS saves the state (context) of a running process and loads the state of another process to run. This is necessary when switching between processes in a multitasking environment to ensure smooth execution.
+9. What are the types of schedulers in an operating system?
+Answer:
+Long-term scheduler (Job scheduler): Decides which processes should be loaded into memory for execution.
+Short-term scheduler (CPU scheduler): Decides which of the ready, in-memory processes should be executed by the CPU.
+Medium-term scheduler: Temporarily removes processes from main memory and places them in secondary storage (swapping).
+10. What is a kernel?
+Answer: The kernel is the core part of an operating system. It manages system resources, including the CPU, memory, and devices. It also handles system calls, process scheduling, memory management, and device management. There are different types of kernels such as monolithic kernels and microkernels.
+11. What is the difference between a monolithic kernel and a microkernel?
+Answer:
+Monolithic Kernel: In a monolithic kernel, all OS services, such as device drivers, file systems, and process management, run in kernel space.
+Microkernel: In a microkernel, only essential services like IPC (Inter-process communication) and CPU scheduling run in kernel space, while other services run in user space.
+12. What is the purpose of system calls in an OS?
+Answer: System calls provide an interface for user-level applications to interact with the operating system. They allow programs to request services from the OS, such as file management, process control, and communication.
+13. What are semaphores, and how are they used in process synchronization?
+Answer: A semaphore is a synchronization primitive used to manage concurrent processes. There are two types:
+Binary Semaphore: Takes only 0 or 1 and is used for mutual exclusion.
+Counting Semaphore: Can take non-negative values and is used for managing resource availability. Semaphores prevent race conditions and ensure that only one process accesses a critical section at a time.
+14. What is thrashing in OS?
+Answer: Thrashing occurs when the OS spends most of its time swapping data between RAM and disk (paging in and out) rather than executing actual processes. This happens when there is insufficient RAM, and the system is overloaded with too many processes that need memory.
+15. What is the difference between preemptive and non-preemptive scheduling?
+Answer:
+Preemptive Scheduling: The OS can interrupt and switch the CPU from one process to another. It is used in time-sharing systems.
+Non-preemptive Scheduling: Once a process starts executing, it cannot be interrupted until it completes or voluntarily yields the CPU.
+These questions cover basic and advanced concepts of operating systems, ideal for interviews and academic preparation.
